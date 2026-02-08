@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        background: linear-gradient(180deg, #ffdde1, #ee9ca7);
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Safe full-height container */
+    .story-wrapper {
+        width: 100%;
+        height: 100svh;
+        max-height: 100svh;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    /* Chat area */
+    .story-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow: hidden;
+    }
+</style>
+<head>
+    <title>Little Moments ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container card">
+        <h1>Little Moments 🤍</h1>
+
+        <p onclick="reveal('m1')">Tap me 💫</p>
+        <p id="m1" style="display:none">Every day with you feels special.</p>
+
+        <p onclick="reveal('m2')">Tap me 🌷</p>
+        <p id="m2" style="display:none">You make my ordinary days beautiful.</p>
+
+        <button class="btn" onclick="location.href='forever.html'">
+            One last thing 💍
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

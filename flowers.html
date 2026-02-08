@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        background: linear-gradient(180deg, #ffdde1, #ee9ca7);
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Safe full-height container */
+    .story-wrapper {
+        width: 100%;
+        height: 100svh;
+        max-height: 100svh;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    /* Chat area */
+    .story-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow: hidden;
+    }
+</style>
+<head>
+    <title>For You 🌷🌻</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="rain"></div>
+
+    <div class="container card">
+        <h1>Tap the screen 🌷🌻</h1>
+        <p>Because you deserve flowers… always.</p>
+
+        <button class="btn" onclick="startRain()">
+            Make it rain 🌷🌻
+        </button>
+
+        <button class="btn" onclick="location.href='forever.html'">
+            One last thing ❤️
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
